@@ -13,4 +13,7 @@ Der dritte Meilenstein war die "Hochzeit" der beiden Kommunikationswege.
 
 Prinzipieller Aufbau
 Die Drohne selbst spannt ein Wlan-Netzwerk auf, in welchem sich der Laptop und das iPhone befinden müssen. Die gesamte Software besteht aus einem Python-Programm.
-Der erste Teil des Programms startet einen Webserver, mit dem sich das iPhone verbindet. Mithilfe der App "ZIG SIM" werden die relevanten Gyroskop-Daten des iPhones über OSC an den Webserver gesendet.
+
+Das Programm startet einen Webserver, mit dem sich das iPhone verbindet. Mithilfe der App "ZIG SIM" werden die relevanten Gyroskop-Daten des iPhones über OSC an den Webserver gesendet. Die OSC-Daten werden vom Python Code interpretiert und in richtungsweisende Daten umgewandelt, die dann mithilfe einer Tello-Bibliothek an die Drohne geschickt werden.
+
+Außerdem verfügt die App "ZIG SIM" über eine Funktion, bei der erkannt wird wie viele Finger gerade den Touch-Bildschirm des iPhones berühren. Diese Daten werden auch über OSC an den Laptop gesendet und werden zum Hoch- und Runterbewegen der Drohne verwendet.
