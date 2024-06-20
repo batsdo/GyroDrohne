@@ -1,4 +1,4 @@
-#Projekt Gyro Drohne [Bearbeiten]
+#Projekt Gyro Drohne
 Unser Ziel war es, mithilfe des Gyroskops eines iPhones eine Drohne zu steuern.
 
 #Systemplan
